@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Helmet Head test</title>
+    <title>Helmet Head test dreamweaver edit</title>
     <link rel="stylesheet" type="text/css" href="hhstyle.css">
   </head>
   <?php
