@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	background-image:url(../images/congruent_bg.png);
+}
+#pageWrap {
+	width:960px;
+	height:1100px;
+	background-image:url(../images/bg.jpg);
+	background-position:cover;
+	margin:50px auto;
+	padding-top:25px;	
+}
+
+/*Header CSS*/
+header {
+	height:100px;
+	width:960px;
+	margin-top:50px;
+	background-color:rgba(51,51,51,0.7);
+	font-family:montserrat, Helvetica, sans-serif;
+	color:rgb(146,146,146);	
+}
+header h1 {
+	padding-top:20px;
+	text-align:center;
+	font-size:48px;
+}
+header h2 {
+	text-align:center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight:200;
+	font-size:18px;
+	padding-top:5px;	
+}
+nav {
+	position:relative;
+	width:100px;
+	height:90px;
+	float:right;
+	background-color:rgba(208,207,207,0.2);
+	top:-88px;
+	right:25px;
+}
+nav ul {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;	
+	align-items: center;
+}
+nav li {
+	padding-top:20px;	
+}
+nav a {
+	text-decoration:none;
+	color:rgb(146,146,146);	
+}
+nav a:hover {
+	color:#0F0;	
+}
+
+#allContentWrap {
+	width:760px;
+	height:860px;
+	margin:0 auto;
+	background-color: rgba(51,51,51,.7);
+	/*border:solid 1px blue;*/	
+}
+#helmetImgWrap {
+	width:500px;
+	height:450px;
+	float:left;
+	/*border:solid 1px green;*/	
+}
+#hemlmetPreview {
+	width:300px;
+	height:300px;
+	/*background-image:url(images/111.png);*/
+	margin:75px auto;	
+}
+aside {
+	width:244px;
+	height:440px;
+	float:left;
+	padding-left:10px;
+	padding-top:10px;
+	background-color: rgba(26,126,121,.3);
+	border-radius:11px;
+	/*border:solid 1px red;*/		
+}
+
+#bottomWrap {
+	width: 760px;
+	min-height:310px;
+	float:left;
+	margin:0px auto;
+	background-color: rgba(26,126,121,.0);
+	border-radius:11px;
+	/*border:solid 1px pink;*/
+}
+#selectorWrap {
+	width: 760px;
+	height: 110px;
+	float:left;
+	padding-top:15px;
+	margin:0px auto;
+	margin-bottom:5px;
+	background-color: rgba(26,126,121,.2);
+	border-radius:11px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;	
+	/*border:solid 1px red;*/
+}
+button {
+	width: 200px;
+	height: 40px;
+	border-radius:15px;	
+	background-color: rgba(26,126,121,.6);
+	color:rgba(208,207,207,.7);
+	font-size:16px;
+	border:none;
+	outline:none;
+}
+
+.optBoxWrap {
+	width:760px;
+	height:160px;
+	float:left;
+	display:none;
+/*	border:solid 1px red;*/
+}
+.eachOptionWrap {
+	width:245px;
+	height:175px;
+	background-color:;
+	border-radius:8px;
+	margin:0px 4px 0px 4px;
+	overflow:hidden;
+	padding-bottom:0px;
+	float:left;
+	
+}
+.title {
+	width:210px;
+	height: 25px;
+	background-color:rgb(186,186,186);
+	padding:5px 0px 0px 5px;
+	float:left;
+	text-align:center;
+}
+.title h3{
+	font-size:24px;
+	color:#1a7e79;
+	padding-left:0px;
+}
+.desc {
+	width:233px;
+	min-height:85px;
+	background-color:rgba(51,51,51,.6);
+	margin:0px auto;
+	clear:both;	
+	overflow:hidden;
+	padding-top:5px;
+	padding-bottom:30px;
+	
+}
+.desc p{
+	padding-left:10px;
+	font-size:14px;
+	color:rgba(208,207,207,.7);
+}
+.selectBtn {
+	width:25px;
+	height:25px;
+	background-color:#666;
+	float:right;
+	padding:5px 0px 0px 5px;	
+}
+.price {
+	width:60px;
+	height:30px;
+	position:relative;
+	background-color:rgb(186,186,186);
+	float:right;
+	top:-30px;
+	text-align:center;
+	border-radius:0px 0px 8px 0px;
+}
+.price h4{
+	font-size:20px;
+	padding-top:5px;
+	
+}
+#baseWrap {
+	/*display:none;*/
+}
+#wrapWrap {
+	/*display:none;*/
+}
+#visorWrap {
+	/*display:none;*/
+}
+#flareWrap {
+	/*display:none;*/
+}
+#techWrap {
+	/*display:none;*/
+}
+
+footer {
+	width:760px;
+	height:100px;
+	float:left;
+	/*border:solid 1px yellow;*/
+}
+#submitOrder {
+	width:200px;
+	Height:50px;
+	margin:25px 275px;
+	border-radius:15px;
+	background-color: rgba(26,126,121,.6);
+	color:rgba(208,207,207,.7);
+	font-size:16px;
+	border:none;
+	outline:none;	
+}
+
+/*Aside Build styles*/
+#userName {
+	width:234px;
+	height:40px;
+	float:left;
+	border-radius:11px;
+	background-color:rgba(26,126,121,.7);
+	text-align:center;
+	color:rgb(146,146,146);
+	padding-top:10px;
+	font-size:36px;
+	margin-bottom:10px;
+}
+.buildBox {
+	width:234px;
+	height:50px;
+	float:left;
+	clear:both;
+	margin:5px auto;
+	border-radius:11px;
+	background-color:rgba(26,126,121,.7);
+}
+#totalBuild {
+	width:100px;
+	height:35px;
+	float:right;
+	margin-right:10px;	
+}
+/*Helmet Build List Styles*/
+.buildBox label {
+	width:234px;
+	padding-left:10px;
+	float:left;
+}
+.BName {
+	width:170px;
+	color:rgb(146,146,146);
+	font-size:26px;
+	float:left;
+	text-align:center;
+}
+.BPrice {
+	width:44px;
+	height:30px;
+	color:rgb(146,146,146);
+	font-size:24px;
+	float:right;
+	padding-right:10px;
+	padding-top:8px;
+	text-align:center;	
+}
+/*Form styling*/
+#loginForm {
+	width:200px;
+	height:200px;
+	background-color:#666;
+	margin:200px auto;
+	border-radius:15px;
+}
+#registerForm{
+	width:200px;
+	height:275px;
+	background-color:#666;
+	margin:200px auto;
+	border-radius:15px;	
+}
+#logOutForm{
+	width:200px;
+	background-color:#666;
+	margin:200px auto;
+	border-radius:15px;	
+}
+form h2 {
+	width:200px;
+	height:40px;
+	border-radius:15px 15px 0px 0px;
+	background-color:#999;
+	padding-top:10px;
+	font-size:28px;
+	text-align:center;
+	margin:0px auto;
+	margin-bottom:25px;
+}
+form h3 {
+	width:200px;
+	height:70px;
+	border-radius:15px 15px 15px 15px;
+	background-color:#999;
+	padding-top:10px;
+	font-size:28px;
+	text-align:center;
+	margin:0px auto;
+	margin-bottom:25px;
+}
+.formElement {
+	width:175px;
+	margin:15px auto;		
+}
+#LogIn, #Register {
+	width:75px;
+	border-radius:5px;
+	margin:0px auto;	
+	margin-left:50px;
+	margin-top:20px;
+}
